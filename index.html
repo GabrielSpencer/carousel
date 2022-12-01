@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Site Bootstrap</title>
-	<meta name="author" content="Cleber Leão" />
+	<title>Barbearia do baiano</title>
+	<meta name="author" content="Gabriel Alves" />
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<meta http-equiv="content-language" content="pt-br" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="fontawesome/css/fontawesome.css" rel="stylesheet">
 	<link href="fontawesome/css/brands.css" rel="stylesheet">
 	<link href="fontawesome/css/solid.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/carousel.css" />
 	<!-- CSS only -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 	<!-- JavaScript Bundle with Popper -->
@@ -68,6 +69,18 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
+	   
+	  .navbar-brand{ 
+		color: white;
+	  }
+	  
+	  .{
+		color:white
+	  }
+	  
+	  .nav-link{ 
+		color: white;
+	  }
     </style>
 
     
@@ -76,22 +89,23 @@
 </head>
 <body>
 <header>
-  <nav class="navbar navbar-expand-md navbar-danger fixed-top bg-danger">
+	
+  <nav class="navbar navbar-expand-md navbar-danger fixed-top bg-black">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Barbearia do baiano</a>
+      <a class="navbar-brand"  href="#"> Barbearia do Baiano</a>
       <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" aria-current="page" href="#" >Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contato</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled">Endereço</a>
+            <a class= "nav-link" href="#mapa">Endereço</a>
           </li>
         </ul>
         <form class="d-flex" role="O que procura?">
@@ -165,19 +179,19 @@
     <div class="row">
       <div class="col-lg-4">
 	 
-        <img src="img/hair-clipper.png" class="bd-placeholder-img bg-primary rounded-circle" width="140" height="140">
+        <img src="img/hair-clipper.png" class="bd-placeholder-img  rounded-circle" width="140" height="140">
         <h2 class="fw-normal">Cortes</h2>
         <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
         <p><a class="btn btn-primary" href="#">Ver detalhes &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-         <img src="img/razor-blade.png" class="bd-placeholder-img bg-danger rounded-circle" width="140" height="140">
+         <img src="img/razor-blade.png" class="bd-placeholder-img  rounded-circle" width="140" height="140">
         <h2 class="fw-normal">Sombraçelhas</h2>
         <p>Temos varios desing de sombraçelha pra você, venha escolher o seu.</p>
         <p><a class="btn btn-danger" href="#">Ver detalhes &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <img src="img/moustache.png" class="bd-placeholder-img bg-warning rounded-circle" width="140" height="140">
+        <img src="img/moustache.png" class="bd-placeholder-img rounded-circle" width="140" height="140">
         <h2 class="fw-normal">Barbas</h2>
         <p>And lastly this, the third column of representative placeholder content.</p>
         <p><a class="btn btn-warning" href="#">Ver detalhes &raquo;</a></p>
@@ -205,8 +219,8 @@
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted"></span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+        <h2 class="featurette-heading fw-normal lh-1">Barbas <span class="text-muted">beard</span></h2>
+        <p class="lead">A Barba por Fazer, a Favorita, o Estilo de Barba que mais atrai o público feminino, eita! Mas também bem cuidada, quase que unanimidade.</p>
       </div>
       <div class="col-md-5 order-md-1">
         <img src="img/31.png" width="300" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
@@ -218,15 +232,27 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">Design sombraçelha masculino<span class="text-muted"></span></h2>
+        <h2 class="featurette-heading fw-normal lh-1">Design sombraçelha<span class="text-muted"> eyebrow drawing</span></h2>
         <p class="lead">A técnica do design na sobrancelha masculina não há pontos de arqueamento. O design será realizado a fim de organizar e alinhar os fios, respeitando o formato de rosto masculino</p>
       </div>
       <div class="col-md-5">
          <img src="img/masculina.jpg" width="300" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
 
       </div>
+	  
     </div>
+	<hr class="featurette-divider">
+	<section id="mapa" class="meio">
+		<div class="mapa">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.331699365065!2d-44.05806518508446!3d-19.994588586567566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6befd03678f93%3A0x7926625c12b86831!2sR.%20Grinalda%2C%2017%20-%20Vila%20Piratininga%2C%20Ibirit%C3%A9%20-%20MG%2C%2032423-330!5e0!3m2!1spt-BR!2sbr!4v1669248769354!5m2!1spt-BR!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<a href="https://api.whatsapp.com/send?phone=5531995304174&text=Texto%20aqui"
+    target="_blank"
+    style="position:fixed;bottom:20px;right:30px;">
+    <svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg>
+</a>
 
+</body>
+		</div>
     <hr class="featurette-divider">
 
     <!-- /END THE FEATURETTES -->
@@ -238,22 +264,15 @@
   <footer class="container">
     <p class="float-end"><a href="#">Back to top</a></p>
     <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+	<i class="fa-brands fa-instagram fa-3x" > </i>
+	<i class="fa-brands fa-facebook fa-3x"></i>
+	<i class="fa-brands fa-linkedin fa-3x"></i>
   </footer>
+  
 </main>
-
-
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-<button type="button" class="btn">Basic</button>
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-dark">Dark</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-link">Link</button>
-      
+	<script src="https://kit.fontawesome.com/1feb12e77f.js" crossorigin="anonymous"></script>
+	
+	
   </body>
 </body>
 </html>
